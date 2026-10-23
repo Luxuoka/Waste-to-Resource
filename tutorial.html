@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial DIY</title>
+    <link rel="icon" type="image/jpeg" href="assets/img/icon/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/img/icon/logo.jpg" alt="Logo Waste-to-Resource" class="logo-img">
+            <span>Waste-to-Resource</span>
+        </a>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="tutorial.html" class="nav-link active">Tutorial</a>
+            <a href="galeri.html" class="nav-link">Galeri</a>
+            <a href="peta.html" class="nav-link">Peta Lokasi</a>
+            <a href="tentang.html" class="nav-link">Tentang Kami</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="themeToggle" class="btn-theme" title="Ubah Mode Tampilan">🌙</button>
+            <button class="hamburger" id="hamburger">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <h2>Tutorial DIY Daur Ulang</h2>
+                <p>Panduan visual cara mengolah sampah anorganik menjadi produk bermanfaat</p>
+            </div>
+
+            <div class="filter-container">
+                <input type="text" id="searchInput" placeholder="Cari tutorial..." class="search-bar">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="plastik">Plastik</button>
+                    <button class="filter-btn" data-filter="kertas">Kertas/Kardus</button>
+                    <button class="filter-btn" data-filter="kaleng">Kaleng</button>
+                </div>
+            </div>
+
+            <div class="cards-grid" id="tutorialGrid">
+                <div class="card" data-category="plastik">
+                    <video class="card-video" controls>
+                        <source
+                            src="assets/video/Membuat POT Ecobrick Dari Botol Bekas Dan Cara Saya Mengurangi Sampah Plastik.mp4"
+                            type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-plastik">Plastik</span>
+                        <h3>Membuat POT Ecobrick Dari Botol Bekas Dan Cara Saya Mengurangi Sampah Plastik</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-category="plastik">
+                    <video class="card-video" controls>
+                        <source src="assets/video/Membuat ECOBRICK Mudah dan Cepat (Tutorial).mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-plastik">Plastik</span>
+                        <h3>Membuat ECOBRICK Mudah dan Cepat (Tutorial)</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-category="kaleng">
+                    <video class="card-video" controls>
+                        <source src="assets/video/Membuat Lampu Tidur Dari Kaleng Bekas (Cans Sleeping Lamps).mp4"
+                            type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-kaleng">Kaleng</span>
+                        <h3>Membuat Lampu Tidur Dari Kaleng Bekas (Cans Sleeping Lamps)</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-category="plastik">
+                    <video class="card-video" controls>
+                        <source src="assets/video/Cara Membuat Tas Tanpa Lubang dari Bukus Kopi.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-plastik">Plastik</span>
+                        <h3>Cara Membuat Tas Tanpa Lubang dari Bukus Kopi</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-category="kertas">
+                    <video class="card-video" controls>
+                        <source
+                            src="assets/video/Cara Membuat Rak Buku dari Kardus  __ Book Organizer __ Book Holder.mp4"
+                            type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-kertas">Kertas/Kardus</span>
+                        <h3>Cara Membuat Rak Buku dari Kardus</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-category="plastik">
+                    <video class="card-video" controls>
+                        <source src="assets/video/Tempat Pensil Meja dari Botol Plastik Bekas.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-plastik">Plastik</span>
+                        <h3>Tempat Pensil Meja dari Botol Plastik Bekas</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-category="plastik">
+                    <video class="card-video" controls>
+                        <source src="assets/video/Pot Bunga Gantung dari Galon Air Bekas.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-plastik">Plastik</span>
+                        <h3>Pot Bunga Gantung dari Galon Air Bekas</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-category="plastik">
+                    <video class="card-video" controls>
+                        <source src="assets/video/Dompet Koin dari Botol Plastik & Resleting.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-plastik">Plastik</span>
+                        <h3>Dompet Koin dari Botol Plastik & Resleting</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-category="kertas">
+                    <video class="card-video" controls>
+                        <source
+                            src="assets/video/Bingkai Foto Estetik dari Kardus & Kertas Koran.mp4"
+                            type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-kertas">Kertas/Kardus</span>
+                        <h3>Bingkai Foto Estetik dari Kardus & Kertas Koran</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-category="kertas">
+                    <video class="card-video" controls>
+                        <source
+                            src="assets/video/Cara membuat lampu hias dari bubur kertas.mp4"
+                            type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-kertas">Kertas/Kardus</span>
+                        <h3>Cara membuat lampu hias dari bubur kertas</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="card" data-category="kaleng">
+                    <video class="card-video" controls>
+                        <source src="assets/video/Tempat Sendok dari Kaleng Bekas.mp4"
+                            type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-kaleng">Kaleng</span>
+                        <h3>Tempat Sendok dari Kaleng Bekas</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="card" data-category="kaleng">
+                    <video class="card-video" controls>
+                        <source src="assets/video/POT KAKTUS MINI SEKULEN DARI KALENG.mp4"
+                            type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-kaleng">Kaleng</span>
+                        <h3>POT KAKTUS MINI SEKULEN DARI KALENG</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="card" data-category="kaleng">
+                    <video class="card-video" controls>
+                        <source src="assets/video/Membuat Celengan dari Kaleng Bekas.mp4"
+                            type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="card-body">
+                        <span class="badge badge-kaleng">Kaleng</span>
+                        <h3>Membuat Celengan dari Kaleng Bekas</h3>
+                        <div class="card-meta">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Waste-to-Resource | SMA Santa Maria 1 Bandung. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

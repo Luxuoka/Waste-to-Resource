@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta Lokasi TPST Kota Bandung</title>
+    <link rel="icon" type="image/jpeg" href="assets/img/icon/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/img/icon/logo.jpg" alt="Logo Waste-to-Resource" class="logo-img">
+            <span>Waste-to-Resource</span>
+        </a>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="tutorial.html" class="nav-link">Tutorial</a>
+            <a href="galeri.html" class="nav-link">Galeri</a>
+            <a href="peta.html" class="nav-link active">Peta Lokasi</a>
+            <a href="tentang.html" class="nav-link">Tentang Kami</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="themeToggle" class="btn-theme" title="Ubah Mode Tampilan">🌙</button>
+            <button class="hamburger" id="hamburger">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <h2>Peta Tempat Pengolahan Sampah Terpadu (TPST)</h2>
+                <p>Lokasi dan fasilitas pengolahan sampah terpadu berbasis teknologi RDF & komposting di Kota Bandung
+                </p>
+            </div>
+
+            <div class="tpst-banner">
+                <div class="tpst-banner-content">
+                    <div class="tpst-banner-badge">
+                        <span>♻️ Inovasi Pengolahan & Daur Ulang Terpadu</span>
+                    </div>
+                    <h3>Tempat Pengolahan Sampah Terpadu (TPST)</h3>
+                    <p>Jaringan fasilitas strategis Pemerintah Kota Bandung untuk mengolah sampah secara mandiri menjadi
+                        <em>Refuse-Derived Fuel</em> (RDF) sebagai energi alternatif terbarukan serta kompos ramah
+                        lingkungan.
+                    </p>
+                </div>
+                <div class="tpst-source-pill">
+                    <span>Sumber: Instagram <strong>@bdg.humas</strong></span>
+                </div>
+            </div>
+
+            <div class="peta-layout">
+                <div class="lokasi-list">
+                    <h3>Daftar Fasilitas TPST</h3>
+
+                    <div class="lokasi-item active" data-target="map-baksil">
+                        <div class="lokasi-item-info">
+                            <h4>TPST Babakan Siliwangi</h4>
+                            <p>Jl. Tamansari No. 90, Kec. Coblong</p>
+                            <span class="lokasi-pill">RDF & Bahan Bakar Alternatif</span>
+                        </div>
+                        <span class="lokasi-arrow">➔</span>
+                    </div>
+
+                    <div class="lokasi-item" data-target="map-tegalega">
+                        <div class="lokasi-item-info">
+                            <h4>TPST Tegallega</h4>
+                            <p>Kompleks Taman Tegallega, Kec. Regol</p>
+                            <span class="lokasi-pill">Modern & RDF</span>
+                        </div>
+                        <span class="lokasi-arrow">➔</span>
+                    </div>
+
+                    <div class="lokasi-item" data-target="map-batununggal">
+                        <div class="lokasi-item-info">
+                            <h4>TPST Batununggal</h4>
+                            <p>Komplek Batununggal Indah, Kec. Bandung Kidul</p>
+                            <span class="lokasi-pill">Kompos & RDF</span>
+                        </div>
+                        <span class="lokasi-arrow">➔</span>
+                    </div>
+
+                    <div class="lokasi-item" data-target="map-nyengseret">
+                        <div class="lokasi-item-info">
+                            <h4>TPST Nyengseret</h4>
+                            <p>Jl. Bojongloa No. 65, Kec. Astanaanyar</p>
+                            <span class="lokasi-pill">Fasilitas Terintegrasi</span>
+                        </div>
+                        <span class="lokasi-arrow">➔</span>
+                    </div>
+
+                    <div class="lokasi-item" data-target="map-cicukang">
+                        <div class="lokasi-item-info">
+                            <h4>TPST Cicukang Holis</h4>
+                            <p>Jl. Cicukang Holis, Kec. Bandung Kulon</p>
+                            <span class="lokasi-pill">Terintegrasi & Bahan Baku RDF</span>
+                        </div>
+                        <span class="lokasi-arrow">➔</span>
+                    </div>
+                </div>
+
+                <div class="map-view" id="mapViewContainer">
+                    <div class="map-card active" id="map-baksil">
+                        <div class="map-card-header">
+                            <div class="map-card-info">
+                                <h3>TPST Babakan Siliwangi</h3>
+                                <p class="map-address">Hutan Kota Babakan Siliwangi, Jl. Tamansari No. 90, Kec. Coblong,
+                                    Kota Bandung</p>
+                                <div class="map-focus-box">
+                                    <strong>Fungsi Pengolahan:</strong> Mengolah sampah menjadi <em>Refuse-Derived Fuel
+                                        (RDF)</em> atau bahan bakar alternatif.
+                                </div>
+                                <div class="map-tags">
+                                    <span class="map-tag">Bahan Bakar Alternatif (RDF)</span>
+                                    <span class="map-tag">Hutan Kota Baksil</span>
+                                    <span class="map-tag">Edukasi Lingkungan</span>
+                                    <span class="map-tag status-open">Buka / Aktif</span>
+                                </div>
+                            </div>
+                            <a href="https://maps.google.com/?q=Hutan+Kota+Babakan+Siliwangi,+Bandung" target="_blank"
+                                rel="noopener noreferrer" class="btn-gmaps">
+                                Buka di Google Maps ↗
+                            </a>
+                        </div>
+                        <div class="map-iframe-wrapper">
+                            <iframe title="Peta Lokasi TPST Babakan Siliwangi"
+                                src="https://maps.google.com/maps?q=Hutan+Kota+Babakan+Siliwangi,+Jl.+Tamansari,+Bandung&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="map-card" id="map-tegalega">
+                        <div class="map-card-header">
+                            <div class="map-card-info">
+                                <h3>TPST Tegallega</h3>
+                                <p class="map-address">Kawasan Konservasi Tegallega, Kel. Ciateul, Kec. Regol, Kota
+                                    Bandung</p>
+                                <div class="map-focus-box">
+                                    <strong>Fungsi Pengolahan:</strong> Fasilitas pengolahan sampah modern dan RDF.
+                                </div>
+                                <div class="map-tags">
+                                    <span class="map-tag">Fasilitas Modern</span>
+                                    <span class="map-tag">Refuse-Derived Fuel (RDF)</span>
+                                    <span class="map-tag">Kawasan Tegallega</span>
+                                    <span class="map-tag status-open">Buka / Aktif</span>
+                                </div>
+                            </div>
+                            <a href="https://maps.google.com/?q=Taman+Konservasi+Tegallega,+Bandung" target="_blank"
+                                rel="noopener noreferrer" class="btn-gmaps">
+                                Buka di Google Maps ↗
+                            </a>
+                        </div>
+                        <div class="map-iframe-wrapper">
+                            <iframe title="Peta Lokasi TPST Tegallega"
+                                src="https://maps.google.com/maps?q=Taman+Konservasi+Tegallega,+Bandung&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="map-card" id="map-batununggal">
+                        <div class="map-card-header">
+                            <div class="map-card-info">
+                                <h3>TPST Batununggal</h3>
+                                <p class="map-address">Komplek Batununggal Indah (Rumah Kompos), Kel. Mengger, Kec.
+                                    Bandung Kidul, Kota Bandung</p>
+                                <div class="map-focus-box">
+                                    <strong>Fungsi Pengolahan:</strong> Mengubah sampah menjadi kompos dan RDF.
+                                </div>
+                                <div class="map-tags">
+                                    <span class="map-tag">Kompos Organik</span>
+                                    <span class="map-tag">Refuse-Derived Fuel (RDF)</span>
+                                    <span class="map-tag">Pengelolaan Mandiri</span>
+                                    <span class="map-tag status-open">Buka / Aktif</span>
+                                </div>
+                            </div>
+                            <a href="https://maps.google.com/?q=Rumah+Kompos+Batununggal+Indah,+Bandung" target="_blank"
+                                rel="noopener noreferrer" class="btn-gmaps">
+                                Buka di Google Maps ↗
+                            </a>
+                        </div>
+                        <div class="map-iframe-wrapper">
+                            <iframe title="Peta Lokasi TPST Batununggal"
+                                src="https://maps.google.com/maps?q=Rumah+Kompos+Batununggal+Indah,+Bandung&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="map-card" id="map-nyengseret">
+                        <div class="map-card-header">
+                            <div class="map-card-info">
+                                <h3>TPST Nyengseret</h3>
+                                <p class="map-address">Jl. Bojongloa No. 65, Kel. Nyengseret, Kec. Astanaanyar, Kota
+                                    Bandung</p>
+                                <div class="map-focus-box">
+                                    <strong>Fungsi Pengolahan:</strong> Fasilitas pengolahan sampah terintegrasi.
+                                </div>
+                                <div class="map-tags">
+                                    <span class="map-tag">Fasilitas Terintegrasi</span>
+                                    <span class="map-tag">Pemilahan Mekanis</span>
+                                    <span class="map-tag">Bahan Baku RDF</span>
+                                    <span class="map-tag status-open">Buka / Aktif</span>
+                                </div>
+                            </div>
+                            <a href="https://maps.google.com/?q=Jl.+Bojongloa+No.+65,+Nyengseret,+Astanaanyar,+Bandung"
+                                target="_blank" rel="noopener noreferrer" class="btn-gmaps">
+                                Buka di Google Maps ↗
+                            </a>
+                        </div>
+                        <div class="map-iframe-wrapper">
+                            <iframe title="Peta Lokasi TPST Nyengseret"
+                                src="https://maps.google.com/maps?q=Jl.+Bojongloa+No.+65,+Nyengseret,+Astanaanyar,+Bandung&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="map-card" id="map-cicukang">
+                        <div class="map-card-header">
+                            <div class="map-card-info">
+                                <h3>TPST Cicukang Holis</h3>
+                                <p class="map-address">Jl. Cicukang Holis, Kel. Caringin, Kec. Bandung Kulon, Kota
+                                    Bandung</p>
+                                <div class="map-focus-box">
+                                    <strong>Fungsi Pengolahan:</strong> Fasilitas pengolahan sampah terintegrasi.
+                                </div>
+                                <div class="map-tags">
+                                    <span class="map-tag">Fasilitas Terintegrasi</span>
+                                    <span class="map-tag">RDF Pengganti Batu Bara</span>
+                                    <span class="map-tag">Pengeringan & Pencacahan</span>
+                                    <span class="map-tag status-open">Buka / Aktif</span>
+                                </div>
+                            </div>
+                            <a href="https://maps.google.com/?q=Jl.+Cicukang+Holis,+Caringin,+Bandung" target="_blank"
+                                rel="noopener noreferrer" class="btn-gmaps">
+                                Buka di Google Maps ↗
+                            </a>
+                        </div>
+                        <div class="map-iframe-wrapper">
+                            <iframe title="Peta Lokasi TPST Cicukang Holis"
+                                src="https://maps.google.com/maps?q=TPST+Cicukang+Holis,+Bandung&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Waste-to-Resource | SMA Santa Maria 1 Bandung. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
